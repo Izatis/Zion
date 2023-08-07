@@ -20,8 +20,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
 }
 
 html {
@@ -59,7 +57,7 @@ input,
 pre {
   text-decoration: none;
   list-style: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   line-height: normal;
 }
@@ -137,4 +135,12 @@ ul li {
 
 img {
   vertical-align: top;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: local("Roboto Black"), local("Roboto-Black"),
+    url("../font/Roboto-Black.ttf") format("truetype");
+  font-style: normal;
+  line-height: normal;
 }
