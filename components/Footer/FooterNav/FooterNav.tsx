@@ -1,4 +1,4 @@
-import zion from '../../../assets/ZionLogo.png'
+import zion from '@/assets/ZionLogo.png'
 import Image from "next/image";
 import {FaFacebookF, FaYoutube} from "react-icons/fa";
 import {AiFillInstagram} from "react-icons/ai";

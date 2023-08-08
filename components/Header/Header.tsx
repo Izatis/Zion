@@ -11,16 +11,14 @@ const Header = () => {
   return (
     <>
       <header className={`${s.header}`}>
-        <div className={s.container}>
+        <div className="container">
           <div
             className={`${s.header__content} flex items-center justify-between`}
           >
             <div className="w-9/12">
               <Image width={108} height={20} src={logo} alt="logo"></Image>
             </div>
-            <button
-              className={`${s.header__support} w-1/12 flex items-center space-x-2`}
-            >
+            <button className="w-1/12 flex items-center space-x-2">
               <span
                 className={`${s.header__dot} block w-3 h-3 rounded-full`}
               ></span>

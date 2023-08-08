@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Phone from "../../assets/Phone.png";
-import AppStore from "../../assets/AppStore.png";
-import GooglePlay from "../../assets/GooglePlay.png";
+import Phone from "@/assets/Phone.png";
+import AppStore from "@/assets/AppStore.png";
+import GooglePlay from "@/assets/GooglePlay.png";
 import s from "./Comfort.module.scss";
 
 const Comfort = () => {

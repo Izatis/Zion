@@ -11,7 +11,14 @@ const config: Config = {
       colors: {
         first: "#FFFFFF",
         second: "#4894FE",
-        third: "#4894FE",
+        three: "#1F2024",
+        fourth: "#4B5768",
+        // fifth
+        // sixth
+        seventh: "#494A50",
+        // eighth
+        // ninth
+        // tenth
       },
       fontFamily: {
         roboto: ["Roboto, sans-serif"],

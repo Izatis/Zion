@@ -5,13 +5,11 @@ import { Modal } from "antd";
 interface IMyModalProps {
   isModalOpen: boolean;
   setIsModalOpen: (active: boolean) => void;
-  children: any;
 }
 
 const MyModal: FC<IMyModalProps> = ({
   isModalOpen,
   setIsModalOpen,
-  children,
 }) => {
   const handleCancel = () => {
     setIsModalOpen(false);
@@ -25,7 +23,6 @@ const MyModal: FC<IMyModalProps> = ({
       footer={null}
       onCancel={handleCancel}
     >
-      {children}
     </Modal>
   );
 };

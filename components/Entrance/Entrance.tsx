@@ -148,7 +148,9 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
         </Button>
         <div className="flex items-center space-x-5 mb-8">
           <hr className="w-full" />
-          <span className="myModal__or font-inter text-sm font-normal">или</span>
+          <span className="myModal__or font-inter text-sm font-normal">
+            или
+          </span>
           <hr className="w-full" />
         </div>
         <Button
@@ -163,9 +165,9 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
               <path
                 d="M4.5 9.33335C4.5 8.62611 4.78095 7.94783 5.28105 7.44774C5.78115 6.94764 6.45942 6.66669 7.16667 6.66669H25.8333C26.5406 6.66669 27.2189 6.94764 27.719 7.44774C28.219 7.94783 28.5 8.62611 28.5 9.33335M4.5 9.33335V22.6667C4.5 23.3739 4.78095 24.0522 5.28105 24.5523C5.78115 25.0524 6.45942 25.3334 7.16667 25.3334H25.8333C26.5406 25.3334 27.2189 25.0524 27.719 24.5523C28.219 24.0522 28.5 23.3739 28.5 22.6667V9.33335M4.5 9.33335L16.5 17.3334L28.5 9.33335"
                 stroke="#4894FE"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           }
@@ -182,7 +184,9 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
             setIsModalOpen(false), setIsCreateAnAccountModalOpen(true);
           }}
         >
-          <p>Создать аккаунт</p>
+          <p className="text-center text-second font-inter text-base font-semibold">
+            Создать аккаунт
+          </p>
         </div>
       </Modal>
       <SignInByMail

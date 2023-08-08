@@ -57,13 +57,12 @@
         }
       }
 
+      .ant-input {
+        height: 48px;
+      }
+
       .ant-input-password {
-        padding: 0 24px 0;
-
-        .ant-input {
-          height: 48px;
-        }
-
+        padding: 0 24px 0 10px;
         .ant-input-password-icon {
           svg {
             width: 24px;
@@ -71,20 +70,23 @@
           }
         }
       }
-
-      .myModal__connection {
-        p {
-          text-align: center;
-          color: #4894fe;
-          font-family: Inter, sans-serif;
-          font-size: 16px;
-          font-weight: 600;
-        }
-      }
-
+      
       hr,
       .myModal__or {
         color: #8f9098;
+      }
+
+      .myModal__in {
+        justify-content: center;
+        background-color: #4894fe;
+        margin: 0 0 24px;
+
+        span {
+          color: #fff;
+          font-family: Inter, sans-serif;
+          font-size: 16px;
+          font-weight: 500;
+        }
       }
     }
   }
