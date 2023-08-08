@@ -1,25 +1,19 @@
 import Warning from "@/components/Warning/Warning";
-import Image from "next/image";
-import Sydney from '../../assets/Sydney.png'
+import {Country} from "@/constants/Country";
+import Card from "@/components/Card/Card";
 
 const Direction = () => {
+    const catalog = Country.map(item => <Card key={item.id} item={item}/>)
+
     return (
-        <section className="pt-5">
+        <section className="pt-8 pb-12">
             <div className="container">
                 <Warning/>
 
+                <h2 className="text-3xl font-extrabold leading-10 mt-12 mb-5">Популярные направления</h2>
 
-                <h2>Популярные направления</h2>
-
-                <div>
-                    <div>
-                        <Image src={Sydney}/>
-
-                        <div>
-                            <p>Сидней</p>
-                            <p>от 23509₽</p>
-                        </div>
-                    </div>
+                <div className="flex justify-between">
+                    {catalog}
                 </div>
             </div>
         </section>
