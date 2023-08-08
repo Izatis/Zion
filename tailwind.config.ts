@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        first: "#FFFFFF",
+        second: "#4894FE",
+        third: "#4894FE",
+      },
       fontFamily: {
         roboto: ["Roboto, sans-serif"],
         inter: ["Inter, sans-serif"],

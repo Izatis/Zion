@@ -148,7 +148,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
         </Button>
         <div className="flex items-center space-x-5 mb-8">
           <hr className="w-full" />
-          <span className="font-inter text-sm font-normal">или</span>
+          <span className="myModal__or font-inter text-sm font-normal">или</span>
           <hr className="w-full" />
         </div>
         <Button
@@ -177,7 +177,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
           Продолжить с эл. почтой
         </Button>
         <div
-          className="myModal_createAccount cursor-pointer mt-16"
+          className="myModal__connection cursor-pointer mt-16"
           onClick={() => {
             setIsModalOpen(false), setIsCreateAnAccountModalOpen(true);
           }}

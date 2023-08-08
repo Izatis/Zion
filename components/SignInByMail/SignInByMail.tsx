@@ -55,7 +55,12 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
             },
           ]}
         >
-          <label htmlFor="gmail">Адрес электронной почты</label>
+          <label
+            className="block font-inter text-base font-medium mb-2"
+            htmlFor="gmail"
+          >
+            Адрес электронной почты
+          </label>
           <Input placeholder={"Gmail"} />
         </Form.Item>
         <Form.Item
@@ -71,8 +76,14 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
             },
           ]}
         >
-          <label className="mb-3" htmlFor="gmail">
-            Пароль <span>Забыли пароль?</span>
+          <label
+            className="flex justify-between font-inter text-base font-medium mb-2"
+            htmlFor="gmail"
+          >
+            Пароль
+            <span className="cursor-pointer text-second text-sm font-medium">
+              Забыли пароль?
+            </span>
           </label>
 
           <Input.Password placeholder={"Пароль"} />
@@ -81,7 +92,7 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
 
       <div className="flex items-center space-x-5 mb-8">
         <hr className="w-full" />
-        <span className="font-inter text-sm font-normal">или</span>
+        <span className="myModal__or font-inter text-sm font-normal">или</span>
         <hr className="w-full" />
       </div>
 

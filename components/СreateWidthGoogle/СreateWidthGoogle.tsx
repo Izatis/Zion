@@ -1,22 +1,20 @@
-import React, { FC, PropsWithChildren } from "react";
+import React, { FC } from "react";
 
 import { Modal } from "antd";
 
-interface IMyModalProps {
+interface IСreateWidthGoogleProps {
   isModalOpen: boolean;
   setIsModalOpen: (active: boolean) => void;
   children: any;
 }
 
-const MyModal: FC<IMyModalProps> = ({
+const СreateWidthGoogle: FC<IСreateWidthGoogleProps> = ({
   isModalOpen,
   setIsModalOpen,
-  children,
 }) => {
   const handleCancel = () => {
     setIsModalOpen(false);
   };
-
   return (
     <Modal
       width={445}
@@ -24,10 +22,8 @@ const MyModal: FC<IMyModalProps> = ({
       open={isModalOpen}
       footer={null}
       onCancel={handleCancel}
-    >
-      {children}
-    </Modal>
+    ></Modal>
   );
 };
 
-export default MyModal;
+export default СreateWidthGoogle;

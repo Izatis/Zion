@@ -81,7 +81,7 @@ const CreateAnAccount: FC<IMyModalVideoProps> = ({
       </Button>
       <div className="flex items-center space-x-5 mb-8">
         <hr className="w-full" />
-        <span className="font-inter text-sm font-normal">или</span>
+        <span className="myModal__or font-inter text-sm font-normal">или</span>
         <hr className="w-full" />
       </div>
 
@@ -91,7 +91,7 @@ const CreateAnAccount: FC<IMyModalVideoProps> = ({
         <Image src={yandex} alt="yandex" />
       </div>
 
-      <div className="myModal_createAccount mt-16">
+      <div className="myModal__connection mt-16">
         <p>Войти в аккаунт</p>
       </div>
     </Modal>

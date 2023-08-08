@@ -13,13 +13,21 @@
       background-color: #4894fe;
       border-radius: 10px;
 
-      .ant-modal-close-x {
-        .anticon {
+      &:hover {
+        background-color: #4894fe;
+
+        .ant-modal-close-icon {
           svg {
-            width: 20px;
-            height: 20px;
             fill: #ffffff;
           }
+        }
+      }
+
+      .ant-modal-close-icon {
+        svg {
+          width: 20px;
+          height: 20px;
+          fill: #ffffff;
         }
       }
     }
@@ -49,13 +57,22 @@
         }
       }
 
-      .ant-form {
+      .ant-input-password {
+        padding: 0 24px 0;
+
         .ant-input {
           height: 48px;
         }
+
+        .ant-input-password-icon {
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
       }
 
-      .myModal_createAccount {
+      .myModal__connection {
         p {
           text-align: center;
           color: #4894fe;
@@ -66,7 +83,7 @@
       }
 
       hr,
-      span {
+      .myModal__or {
         color: #8f9098;
       }
     }
