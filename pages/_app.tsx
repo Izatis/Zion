@@ -1,5 +1,6 @@
-import "@/styles/antd.css";
 import "@/styles/globals.scss";
+import "@/styles/antd.css";
+import "@/styles/MyModal.scss";
 import type { AppProps } from "next/app";
 import Layout from "@/components/Layout/Layout";
 
