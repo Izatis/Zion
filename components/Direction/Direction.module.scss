@@ -1,0 +1,16 @@
+@import "../../styles/adaptive.scss";
+@import "../../styles/variables.scss";
+
+.hero {
+  height: 611px;
+  background-color: #4894fe;
+  @include adaptive-value("padding-top", 203, 100, 0);
+
+  .container {
+    @include container();
+
+    h1{
+        color: #fff;
+    }
+  }
+}
