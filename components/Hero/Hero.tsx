@@ -10,7 +10,7 @@ import arrow from "../../assets/arrow.svg";
 
 const Hero = () => {
   return (
-    <section className={`${s.hero} relative`}>
+    <section className={`${s.hero} relative mb-48`}>
       <div className="container">
         <h1 className="font-roboto text-8xl font-extrabold">
           Путешествуй <br /> без ограничений
