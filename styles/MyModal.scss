@@ -1,15 +1,68 @@
-.ant-modal-close {
-  width: 44px !important;
-  height: 44px !important;
-  top: -20px !important;
-  right: -20px !important;
-  background-color: #4894FE !important;
-  border-radius: 10px !important;
+@import "./styles/adaptive.scss";
+@import "./styles/variables.scss";
 
-  svg{
+.ant-modal {
+  .ant-modal-content {
+    @include adaptive-value("padding", 60, 30, 0);
 
+    .ant-modal-close {
+      width: 44px;
+      height: 44px;
+      top: -20px;
+      right: -20px;
+      background-color: #4894fe;
+      border-radius: 10px;
+
+      .ant-modal-close-x {
+        .anticon {
+          svg {
+            width: 20px;
+            height: 20px;
+            fill: #ffffff;
+          }
+        }
+      }
+    }
+
+    .ant-modal-header {
+      .ant-modal-title {
+        font-family: Inter, sans-serif;
+        @include adaptive-value("font-size", 28, 16, 0);
+        font-weight: 600;
+        margin: 0 0 30px;
+      }
+    }
+
+    .ant-modal-body {
+      .ant-btn {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin: 0 0 30px;
+
+        span {
+          color: #8f9098;
+          font-family: Inter, sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      .myModal_createAccount {
+        p {
+          text-align: center;
+          color: #4894fe;
+          font-family: Inter, sans-serif;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+
+      hr,
+      span {
+        color: #8f9098;
+      }
+    }
   }
-}
-
-.ant-modal-close {
 }

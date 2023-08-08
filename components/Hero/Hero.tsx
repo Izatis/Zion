@@ -12,7 +12,7 @@ const Hero = () => {
   return (
     <section className={`${s.hero} relative`}>
       <div className={s.container}>
-        <h1 className="text-8xl font-extrabold">
+        <h1 className="font-roboto text-8xl font-extrabold">
           Путешествуй <br /> без ограничений
         </h1>
         <div
@@ -36,7 +36,7 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">Поиск</span>
+                <span className="font-inter text-base font-medium">Поиск</span>
               </Link>
             </li>
             <li>
@@ -56,7 +56,7 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">Авиабилеты</span>
+                <span className="font-inter text-base font-medium">Авиабилеты</span>
               </Link>
             </li>
             <li>
@@ -76,7 +76,7 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">ЖД-билеты</span>
+                <span className="font-inter text-base font-medium">ЖД-билеты</span>
               </Link>
             </li>
             <li>
@@ -103,7 +103,7 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">Отели</span>
+                <span className="font-inter text-base font-medium">Отели</span>
               </Link>
             </li>
             <li>
@@ -123,7 +123,7 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">Туры</span>
+                <span className="font-inter text-base font-medium">Туры</span>
               </Link>
             </li>
             <li>
@@ -143,7 +143,7 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">Аренда авто</span>
+                <span className="font-inter text-base font-medium">Аренда авто</span>
               </Link>
             </li>
             <li>
@@ -163,7 +163,7 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">Аренда яхт</span>
+                <span className="font-inter text-base font-medium">Аренда яхт</span>
               </Link>
             </li>
             <li>
@@ -183,14 +183,14 @@ const Hero = () => {
                     stroke-linejoin="round"
                   />
                 </svg>
-                <span className="text-base font-medium">Круизы</span>
+                <span className="font-inter text-base font-medium">Круизы</span>
               </Link>
             </li>
           </ul>
 
           <ul className="flex justify-between py-8">
             <li className="w-full relative flex items-center border rounded-lg ps-6">
-              <span className="text-base font-semibold">Откуда</span>
+              <span className="font-inter text-base font-semibold">Откуда</span>
               <Image
                 className="w-7 h-7 absolute cursor-pointer"
                 src={arrow}
@@ -198,7 +198,7 @@ const Hero = () => {
               />
             </li>
             <li className="w-full flex items-center border rounded-lg ps-6">
-              <span className="text-base font-semibold">Куда</span>
+              <span className="font-inter text-base font-semibold">Куда</span>
             </li>
             <li>
               <DatePicker
@@ -224,7 +224,7 @@ const Hero = () => {
               />
             </li>
             <li className="w-full">
-              <button className="w-full h-full rounded-lg text-base font-bold">
+              <button className="w-full h-full rounded-lg font-inter text-base font-bold">
                 Найти
               </button>
             </li>

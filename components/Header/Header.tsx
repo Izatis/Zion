@@ -3,7 +3,7 @@ import s from "./Header.module.scss";
 import Image from "next/image";
 import logo from "../../public/logo.svg";
 
-import MyModal from "../UI/MyModal/MyModal";
+import Entrance from "../Entrance/Entrance";
 
 const Header = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,23 +24,23 @@ const Header = () => {
               <span
                 className={`${s.header__dot} block w-3 h-3 rounded-full`}
               ></span>
-              <span className="text-base font-bold">Поддержка</span>
+              <span className="font-plus text-base font-bold">Поддержка</span>
             </button>
             <button
-              className={`${s.header__price} w-1/12 rounded-lg text-lg text-base font-bold py-3`}
+              className={`${s.header__price} w-1/12 rounded-lg font-plus text-lg text-base font-bold py-3`}
             >
               ₽, RUB
             </button>
             <button
-              className={`${s.header__athorization} w-1/12 rounded-lg text-lg text-base font-bold py-3`}
-              onClick={() => setIsModalOpen(!isModalOpen)}
+              className={`${s.header__athorization} w-1/12 rounded-lg font-plus text-lg text-base font-bold py-3`}
+              onClick={() => setIsModalOpen(true)}
             >
               Войти
             </button>
           </div>
         </div>
       </header>
-      <MyModal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+      <Entrance isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </>
   );
 };
