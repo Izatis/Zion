@@ -1,18 +1,18 @@
-@import "../../styles/variables.scss";
 @import "../../styles/adaptive.scss";
+@import "../../styles/variables.scss";
 
 .header {
-  background: #4894fe;
-
   .container {
     @include container();
 
     .header__content {
       height: 100px;
 
-      .header__support {
-        color: #ffffff;
+      button {
+        color: #fff;
+      }
 
+      .header__support {
         .header__dot {
           background: #fe1620;
         }
@@ -21,13 +21,11 @@
       .header__price {
         max-width: 92px;
         background: rgba(255, 255, 255, 0.15);
-        color: #ffffff;
       }
 
       .header__athorization {
         max-width: 92px;
         background: #fd161f;
-        color: #ffffff;
       }
     }
   }
