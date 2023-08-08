@@ -1,6 +1,6 @@
 import Sydney from '../assets/Sydney.png'
 import Tokyo from '../assets/Tokyo.png'
-import SriLanka from '../assets/SriLanka.png'
+import SriLanka from '../assets/Srilanka.png'
 import Antalya from '../assets/Antalya.png'
 
 export const Country = [
