@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'styles/variables';
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -135,6 +137,10 @@ ul li {
 
 img {
   vertical-align: top;
+}
+
+.container{
+  @include container
 }
 
 @font-face {
