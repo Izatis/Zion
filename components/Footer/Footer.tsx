@@ -1,9 +1,10 @@
 import Offer from "@/components/Footer/Offer/Offer";
 import FooterNav from "@/components/Footer/FooterNav/FooterNav";
+import s from './Footer.module.scss'
 
 const Footer = () => {
   return (
-      <footer className="bg-blue-500 pt-10">
+      <footer className={s.footer}>
           <div className="container">
               <Offer/>
               <FooterNav/>

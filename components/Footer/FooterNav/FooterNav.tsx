@@ -6,8 +6,8 @@ import {TbBrandTwitterFilled, TbMailFilled} from "react-icons/tb";
 
 const FooterNav = () => {
     return (
-        <nav className="flex justify-between my-10 items-center">
-            <div className="flex flex-col gap-6 w-1/4">
+        <nav className="flex justify-between my-14 items-center">
+            <div className="flex flex-col gap-8 w-1/4">
                 <div>
                     <Image src={zion} alt="zionLogo"/>
                 </div>
@@ -27,7 +27,7 @@ const FooterNav = () => {
 
             <div className="w-1/4 flex justify-between">
                 <div>
-                    <h2 className="text-white text-2xl font-normal font-semibold leading-8 mb-5">Компания</h2>
+                    <h2 className="text-white text-2xl font-normal font-semibold leading-8 mb-6">Компания</h2>
 
                     <ul className="flex flex-col">
                         <li className="text-white text-base font-normal leading-8">О компании</li>
@@ -36,7 +36,7 @@ const FooterNav = () => {
                 </div>
 
                 <div>
-                    <h2 className="text-white text-2xl font-normal font-semibold leading-8 mb-5">Помощь</h2>
+                    <h2 className="text-white text-2xl font-normal font-semibold leading-8 mb-6">Помощь</h2>
 
                     <ul className="flex flex-col">
                         <li className="text-white text-base font-normal leading-8">Поддержка</li>

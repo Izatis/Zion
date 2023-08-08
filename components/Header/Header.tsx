@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import s from "./Header.module.scss";
-
 import Image from "next/image";
 import logo from "../../public/logo.svg";
 
