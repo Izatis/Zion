@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 
-import { Image, Modal } from "antd";
+import { Form, Image, Modal } from "antd";
 import google from "../../assets/google.svg";
 import apply from "../../assets/apply.svg";
 import facebook from "../../assets/facebook.svg";
@@ -18,6 +18,14 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
   const handleCancel = () => {
     setSignInByMailIsModalOpen(false);
   };
+  // ---------------------------------------------------------------------------------------------------------------------------------
+  // POST
+  const [form] = Form.useForm();
+  useEffect(() => {
+    form.setFieldsValue({ ...form.getFieldsValue() });
+  }, []);
+
+  const handleSubmit = (value: any) => {};
 
   return (
     <Modal
@@ -27,6 +35,10 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
       footer={null}
       onCancel={handleCancel}
     >
+      <Form form={form} name="sign-up-form" onFinish={handleSubmit}>
+        
+      </Form>
+
       <div className="flex items-center space-x-5 mb-8">
         <hr className="w-full" />
         <span className="font-inter text-sm font-normal">или</span>
