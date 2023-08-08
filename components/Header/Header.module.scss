@@ -1,0 +1,33 @@
+@import "../../styles/adaptive.scss";
+@import "../../styles/variables.scss";
+
+.header {
+  display: none;
+  .container {
+    @include container();
+
+    .header__content {
+      height: 100px;
+
+      button {
+        color: #fff;
+      }
+
+      .header__support {
+        .header__dot {
+          background: #fe1620;
+        }
+      }
+
+      .header__price {
+        max-width: 92px;
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .header__athorization {
+        max-width: 92px;
+        background: #fd161f;
+      }
+    }
+  }
+}

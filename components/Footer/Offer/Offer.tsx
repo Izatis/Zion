@@ -1,9 +1,9 @@
 const Offer = () => {
     return (
-        <div className="rounded-xl bg-blue-400 p-4 flex justify-between">
+        <div className="rounded-2xl bg-blue-400 p-6 flex justify-between">
             <div className="flex flex-col">
                 <p className="text-2xl font-semibold leading-8 text-white">Рассылка с выгодными предложениями</p>
-                <p className="text-base font-normal leading-7 text-white">Эксклюзивные акции и рекомендации от ZION Assist</p>
+                <p className="text-base font-lg leading-7 text-white">Эксклюзивные акции и рекомендации от ZION Assist</p>
             </div>
 
             <div className="flex items-center justify-between  bg-white rounded-2xl p-3 w-1/3">
