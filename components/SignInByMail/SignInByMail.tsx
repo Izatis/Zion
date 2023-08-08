@@ -1,10 +1,11 @@
 import React, { FC, useEffect, useState } from "react";
 
-import { Form, Image, Input, Modal } from "antd";
-import google from "../../assets/secondGoogle.svg";
-import apply from "../../assets/secondApply.svg";
-import facebook from "../../assets/secondFacebook.svg";
-import yandex from "../../assets/secondYandex.svg";
+import Image from "next/image";
+import { Form, Input, Modal } from "antd";
+import google from "../../assets/google.svg";
+import apply from "../../assets/apply.svg";
+import facebook from "../../assets/facebook.svg";
+import yandex from "../../assets/yandex.svg";
 
 interface IMyModalVideoProps {
   isSignInByMailModalOpen: boolean;
@@ -41,7 +42,7 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
     >
       <Form form={form} name="sign-up-form" onFinish={handleSubmit}>
         <Form.Item
-          name="email"
+          name="hello@example.com"
           rules={[
             {
               required: true,
@@ -54,6 +55,7 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
             },
           ]}
         >
+          <label htmlFor="gmail">Адрес электронной почты</label>
           <Input placeholder={"Gmail"} />
         </Form.Item>
         <Form.Item
@@ -69,6 +71,10 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
             },
           ]}
         >
+          <label className="mb-3" htmlFor="gmail">
+            Пароль <span>Забыли пароль?</span>
+          </label>
+
           <Input.Password placeholder={"Пароль"} />
         </Form.Item>
       </Form>

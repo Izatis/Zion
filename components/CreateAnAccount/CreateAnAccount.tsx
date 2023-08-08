@@ -2,9 +2,9 @@ import React, { FC } from "react";
 
 import Image from "next/image";
 import { Button, Modal } from "antd";
-import apply from "../../assets/firstApply.svg";
-import facebook from "../../assets/firstFacebook.svg";
-import yandex from "../../assets/firstYandex.svg";
+import apply from "../../assets/apply.svg";
+import facebook from "../../assets/facebook.svg";
+import yandex from "../../assets/yandex.svg";
 
 interface IMyModalVideoProps {
   isCreateAnAccountModalOpen: boolean;
