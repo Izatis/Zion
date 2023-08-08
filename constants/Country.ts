@@ -1,6 +1,9 @@
 import Sydney from '../assets/Sydney.png'
+import Tokyo from '../assets/Tokyo.png'
+import SriLanka from '../assets/SriLanka.png'
+import Antalya from '../assets/Antalya.png'
 
-const Country = [
+export const Country = [
     {
         id: 1,
         img: Sydney,
@@ -9,19 +12,19 @@ const Country = [
     },
     {
         id: 2,
-        img: Sydney,
+        img: Tokyo,
         title: "Токио",
         price: 34509
     },
     {
         id: 3,
-        img: Sydney,
+        img: SriLanka,
         title: "Шри-Ланка",
         price: 27509
     },
     {
         id: 4,
-        img: Sydney,
+        img: Antalya,
         title: "Анталия",
         price: 13509
     }
