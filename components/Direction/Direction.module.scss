@@ -4,13 +4,68 @@
 .hero {
   height: 611px;
   background-color: #4894fe;
-  @include adaptive-value("padding-top", 203, 100, 0);
+  @include adaptive-value("padding-top", 100, 100, 0);
 
   .container {
     @include container();
 
-    h1{
-        color: #fff;
+    h1 {
+      color: #fff;
+    }
+
+    .tabs {
+      background-color: #ffffff;
+      bottom: -10%;
+
+      ul:nth-child(1) {
+        border-bottom: 1px solid #e8e9f1;
+        li {
+          a {
+            &:hover {
+              border-bottom: 2px solid #4894fe;
+              svg {
+                path {
+                  stroke: #1f2024;
+                }
+              }
+              span {
+                color: #1f2024;
+              }
+            }
+
+            span {
+              color: #c5c6cc;
+            }
+          }
+        }
+      }
+
+      ul:nth-child(2) {
+        li {
+          height: 68px;
+        }
+
+        li:nth-child(1) {
+          max-width: 291px;
+
+          img {
+            right: -20px;
+          }
+        }
+
+        li:nth-child(2) {
+          max-width: 291px;
+        }
+
+        li:nth-child(6) {
+          max-width: 145px;
+
+          button {
+            background-color: #4894fe;
+            color: #fff;
+          }
+        }
+      }
     }
   }
 }

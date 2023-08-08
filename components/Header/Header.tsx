@@ -6,7 +6,7 @@ import logo from "../../public/logo.svg";
 
 const Header = () => {
   return (
-    <header className={`${s.header} w-full fixed top-0`}>
+    <header className={`${s.header}`}>
       <div className={s.container}>
         <div
           className={`${s.header__content} flex items-center justify-between`}
