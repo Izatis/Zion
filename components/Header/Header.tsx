@@ -20,7 +20,7 @@ const Header = () => {
             </div>
             <button className="w-1/12 flex items-center me-16">
               <span
-                className={`${s.header__dot} block w-3 h-3 rounded-full`}
+                className={`${s.header__dot} block  rounded-full`}
               ></span>
               <span className="text-fifth font-plus text-base font-bold">
                 Поддержка

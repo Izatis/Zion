@@ -16,7 +16,7 @@ const Hero = () => {
     <>
       <section className={`${s.hero} relative bg-second mb-48`}>
         <div className="container">
-          <h1 className="text-fifth font-roboto text-8xl font-extrabold">
+          <h1 className="text-fifth font-roboto font-extrabold">
             Путешествуй <br /> без ограничений
           </h1>
           <div

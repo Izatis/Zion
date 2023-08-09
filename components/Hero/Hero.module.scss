@@ -5,6 +5,10 @@
   height: 611px;
   @include adaptive-value("padding-top", 100, 100, 0);
 
+  h1 {
+    @include adaptive-value("font-size", 96, 40, 1);
+  }
+
   .tabs {
     bottom: -10%;
     background-color: #ffffff;
