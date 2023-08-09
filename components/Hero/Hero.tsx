@@ -4,7 +4,7 @@ import s from "./Hero.module.scss";
 
 import Link from "next/link";
 import Image from "next/image";
-import { DatePicker } from "antd";
+import { DatePicker, Input } from "antd";
 import { Select } from "antd";
 import arrow from "../../assets/arrow.svg";
 import PasswordRecovery from "../PasswordRecovery/PasswordRecovery";
@@ -24,7 +24,7 @@ const Hero = () => {
           >
             <ul className="flex gap-2 lg:gap-8 xl:gap-10 ">
               <li>
-                <Link href="#" className="flex items-center gap-3 h-20">
+                <button className="flex items-center gap-3 h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -43,10 +43,10 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     Поиск
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-3  h-20">
+                <button className="flex items-center gap-3  h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -65,10 +65,10 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     Авиабилеты
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-3  h-20">
+                <button className="flex items-center gap-3  h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -87,10 +87,10 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     ЖД-билеты
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-3  h-20">
+                <button className="flex items-center gap-3  h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -116,10 +116,10 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     Отели
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-3  h-20">
+                <button className="flex items-center gap-3  h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -138,10 +138,10 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     Туры
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-3  h-20">
+                <button className="flex items-center gap-3  h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -160,10 +160,10 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     Аренда авто
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-3  h-20">
+                <button className="flex items-center gap-3  h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -182,10 +182,10 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     Аренда яхт
                   </span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link href="#" className="flex items-center gap-3  h-20">
+                <button className="flex items-center gap-3  h-20">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -204,21 +204,21 @@ const Hero = () => {
                   <span className="whitespace-nowrap font-inter font-medium">
                     Круизы
                   </span>
-                </Link>
+                </button>
               </li>
             </ul>
 
             <ul className="flex justify-between gap-4 py-8">
-              <li className="w-full relative flex items-center border rounded-lg ps-6">
-                <span className="font-inter font-semibold">Откуда</span>
+              <li className="relative">
+                <Input placeholder="Откуда" />
                 <Image
                   className="w-7 h-7 absolute cursor-pointer"
                   src={arrow}
                   alt="arrow"
                 />
               </li>
-              <li className="w-full flex items-center border rounded-lg ps-6">
-                <span className="font-inter font-semibold">Куда</span>
+              <li>
+                <Input placeholder="Куда" />
               </li>
               <li>
                 <DatePicker placeholder="Туда" />
