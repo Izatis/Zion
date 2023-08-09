@@ -25,7 +25,7 @@ const Successfully: FC<ISuccessfullyProps> = ({
       onCancel={handleCancel}
     >
       <div className="flex flex-col items-center">
-        <Image className="mb-2" src={message} alt="message" />
+        <Image className="mb-4" src={message} alt="message" />
         <b className="text-three text-3xl font-semibold mb-4">Успешно</b>
         <p className="text-center text-seventh text-lg font-normal">
           На указанный Вами Email было отправлено письмо с ссылкой для сброса

@@ -40,10 +40,10 @@ const PasswordRecovery: FC<IPasswordRecoveryProps> = ({
       footer={null}
       onCancel={handleCancel}
     >
-      <p className="text-tenth font-inter text-base font-medium">
+      <p className="text-tenth font-inter text-base font-medium mt-4 mb-6">
         Ваш аккаунт: hello@example.com
       </p>
-      <b className="text-three font-inter text-xl font-semibold ">
+      <b className="inline-block text-three font-inter text-xl font-semibold mb-3">
         Укажите новый пароль
       </b>
       <Form form={form} name="password-recovery" onFinish={handleSubmit}>

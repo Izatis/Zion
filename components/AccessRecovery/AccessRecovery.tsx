@@ -53,8 +53,14 @@ const AccessRecovery: FC<IAccessRecoveryProps> = ({
         footer={null}
         onCancel={handleCancel}
       >
-        <Form form={form} name="access-recovery" onFinish={handleSubmit}>
+        <Form
+          className="mt-4"
+          form={form}
+          name="access-recovery"
+          onFinish={handleSubmit}
+        >
           <Form.Item
+            className="mb-6"
             name="email"
             rules={[
               {

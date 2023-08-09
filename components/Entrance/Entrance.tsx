@@ -27,6 +27,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
         onCancel={handleCancel}
       >
         <Button
+          className="mt-7 mb-4"
           icon={
             <svg
               width="33"
@@ -59,6 +60,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
           Войти с помощью Google
         </Button>
         <Button
+          className="mb-4"
           icon={
             <svg
               width="33"
@@ -95,6 +97,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
           Войти с помощью Apple
         </Button>
         <Button
+          className="mb-4"
           icon={
             <svg
               width="33"
@@ -127,6 +130,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
           Войти с помощью Facebook
         </Button>
         <Button
+          className="mb-6"
           icon={
             <svg
               width="33"
@@ -146,7 +150,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
         >
           Войти с помощью Yandex
         </Button>
-        <div className="flex items-center space-x-5 mb-8">
+        <div className="flex items-center gap-6 mb-6">
           <hr className="w-full" />
           <span className="myModal__or font-inter text-sm font-normal">
             или
@@ -154,6 +158,7 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
           <hr className="w-full" />
         </div>
         <Button
+          className="mb-11 "
           icon={
             <svg
               width="33"
@@ -178,16 +183,16 @@ const Entrance: FC<IMyModalVideoProps> = ({ isModalOpen, setIsModalOpen }) => {
         >
           Продолжить с эл. почтой
         </Button>
-        <div
-          className="myModal__connection cursor-pointer mt-16"
+        <button
+          className="w-full"
           onClick={() => {
             setIsModalOpen(false), setIsCreateAnAccountModalOpen(true);
           }}
         >
-          <p className="text-center text-second font-inter text-base font-semibold">
+          <p className="text-second font-inter text-base font-semibold">
             Создать аккаунт
           </p>
-        </div>
+        </button>
       </Modal>
       <SignInByMail
         isSignInByMailModalOpen={isSignInByMailModalOpen}

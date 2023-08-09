@@ -1,0 +1,9 @@
+@import "../../../styles/adaptive.scss";
+
+.offer__text:nth-child(1) {
+  @include adaptive-value("font-size", 24, 12, 1);
+}
+
+.offer__text:nth-child(2) {
+  @include adaptive-value("font-size", 18, 10, 1);
+}

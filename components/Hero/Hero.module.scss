@@ -13,53 +13,44 @@
     bottom: -10%;
     background-color: #ffffff;
     box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.07);
+
     ul:nth-child(1) {
       border-bottom: 1px solid #e8e9f1;
-      li {
-        button {
-          &:focus {
-            border-bottom: 2px solid #4894fe;
-            svg {
-              path {
-                stroke: #1f2024;
-              }
-            }
-            span {
-              color: #1f2024;
-            }
-          }
-        }
+      @include adaptive-value("gap", 20, 10, 1);
 
+      li {
+        @include adaptive-value("height", 80, 50, 1);
+        display: flex;
+        align-items: center;
         span {
           color: #c5c6cc;
           @include adaptive-value("font-size", 16, 8, 1);
         }
       }
     }
+  }
 
-    ul:nth-child(2) {
-      li {
-        @include adaptive-value("height", 68, 50, 1);
+  ul:nth-child(3) {
+    @include adaptive-value("height", 68, 50, 1);
+    box-sizing: content-box;
+
+    li:nth-child(1) {
+      img {
+        @include adaptive-value("width", 40, 20, 1);
+        @include adaptive-value("height", 40, 20, 1);
+        z-index: 10;
+        top: 20%;
+        @include adaptive-value("right", -40, -5, 0);
       }
+    }
 
-      li:nth-child(1) {
-        img {
-          @include adaptive-value("width", 40, 20, 1);
-          @include adaptive-value("height", 40, 20, 1);
-          z-index: 10;
-          top: 20%;
-          right: -25px;
-        }
-      }
+    li:nth-child(6) {
+      max-width: 145px;
 
-      li:nth-child(6) {
-        max-width: 145px;
-
-        button {
-          background-color: #4894fe;
-          color: #fff;
-          @include adaptive-value("font-size", 16, 8, 1);
-        }
+      button {
+        background-color: #4894fe;
+        color: #fff;
+        @include adaptive-value("font-size", 16, 8, 1);
       }
     }
   }

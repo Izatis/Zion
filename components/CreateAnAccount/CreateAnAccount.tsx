@@ -32,6 +32,7 @@ const CreateAnAccount: FC<IMyModalVideoProps> = ({
         onCancel={handleCancel}
       >
         <Button
+          className="mt-9 mb-4"
           icon={
             <svg
               width="33"
@@ -68,6 +69,7 @@ const CreateAnAccount: FC<IMyModalVideoProps> = ({
           Продолжить с Google
         </Button>
         <Button
+          className="mb-6"
           icon={
             <svg
               width="33"
@@ -89,23 +91,23 @@ const CreateAnAccount: FC<IMyModalVideoProps> = ({
         >
           Продолжить с эл. почтой
         </Button>
-        <div className="flex items-center space-x-5 mb-8">
+        <div className="flex items-center gap-6 mb-6 ">
           <hr className="w-full" />
           <span className="myModal__or font-inter text-sm font-normal">
             или
           </span>
           <hr className="w-full" />
         </div>
-
-        <div className="flex justify-center space-x-5">
+        <div className="flex justify-center gap-5 mb-11">
           <Image className="cursor-pointer" src={apply} alt="apply" />
           <Image className="cursor-pointer" src={facebook} alt="facebook" />
           <Image className="cursor-pointer" src={yandex} alt="yandex" />
         </div>
-
-        <div className="cursor-pointer mt-16">
-          <p className="text-center text-second font-inter text-base font-semibold">Войти в аккаунт</p>
-        </div>
+        <button className="w-full">
+          <p className="text-second font-inter text-base font-semibold">
+            Войти в аккаунт
+          </p>
+        </button>
       </Modal>
       <СreateWidthGoogle
         isСreateWidthGoogleModalOpen={isСreateWidthGoogleModalOpen}

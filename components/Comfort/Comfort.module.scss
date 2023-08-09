@@ -1,16 +1,17 @@
-.comfort{
+@import "../../styles/adaptive.scss";
+@import "../../styles/variables.scss";
+
+.comfort {
   padding: 114px 0 107px;
 }
 
-.phone{
-  width: 558.243px;
-  height: 624px;
-  margin-right: 150px;
+.phone {
+  @include adaptive-value("height", 624, 400, 1);
 }
 
-.circle{
+.circle {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #4894FE;
+  background: #4894fe;
 }

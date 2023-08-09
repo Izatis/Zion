@@ -45,9 +45,8 @@ const Comfort = () => {
               </div>
             </div>
           </div>
-
-          <div className={`${s.phone}`}>
-            <Image className="w-full" src={Phone} alt="Phone" />
+          <div className={`${s.phone} mr-0  lg:mr-24 xl:mr-36`}>
+            <Image className="w-full h-full" src={Phone} alt="Phone" />
           </div>
         </div>
       </div>

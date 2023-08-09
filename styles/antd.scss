@@ -1,7 +1,23 @@
 @import "./styles/adaptive.scss";
 @import "./styles/variables.scss";
 
-.ant-input {
+// Menu
+.ant-menu-overflow {
+  .ant-menu-item-selected {
+    svg {
+      path {
+        stroke: #1f2024;
+      }
+    }
+    
+    span {
+      color: #1f2024 !important;
+    }
+  }
+}
+
+// Inputs
+.hero__input {
   @include adaptive-value("width", 291, 0, 1);
   height: 100%;
   font-family: "Inter", sans-serif;
