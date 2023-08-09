@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${s.header}`}>
+      <header className={`${s.header} bg-second`}>
         <div className="container">
           <div
             className={`${s.header__content} flex items-center justify-between`}
@@ -18,19 +18,21 @@ const Header = () => {
             <div className="w-9/12">
               <Image width={108} height={20} src={logo} alt="logo"></Image>
             </div>
-            <button className="w-1/12 flex items-center space-x-2">
+            <button className="w-1/12 flex items-center me-16">
               <span
                 className={`${s.header__dot} block w-3 h-3 rounded-full`}
               ></span>
-              <span className="font-plus text-base font-bold">Поддержка</span>
+              <span className="text-fifth font-plus text-base font-bold">
+                Поддержка
+              </span>
             </button>
             <button
-              className={`${s.header__price} w-1/12 rounded-lg font-plus text-lg text-base font-bold py-3`}
+              className={`${s.header__price} w-1/12 rounded-lg whitespace-nowrap text-fifth font-plus text-lg text-base font-bold  py-3  me-4`}
             >
               ₽, RUB
             </button>
             <button
-              className={`${s.header__athorization} w-1/12 rounded-lg font-plus text-lg text-base font-bold py-3`}
+              className={`${s.header__athorization} w-1/12 rounded-lg text-fifth font-plus text-lg text-base font-bold  py-3`}
               onClick={() => setIsModalOpen(true)}
             >
               Войти

@@ -10,17 +10,17 @@ import arrow from "../../assets/arrow.svg";
 
 const Hero = () => {
   return (
-    <section className={`${s.hero} relative mb-48`}>
+    <section className={`${s.hero} relative bg-second mb-48`}>
       <div className="container">
-        <h1 className="font-roboto text-8xl font-extrabold">
+        <h1 className="text-fifth font-roboto text-8xl font-extrabold">
           Путешествуй <br /> без ограничений
         </h1>
         <div
-          className={`${s.tabs} container absolute left-0 right-0 rounded-2xl px-14`}
+          className={`${s.tabs} container absolute left-0 right-0 rounded-2xl px-5 lg:px10 xl:px-14 `}
         >
-          <ul className="flex">
+          <ul className="flex gap-2 lg:gap-8 xl:gap-10 ">
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3 h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -36,11 +36,13 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">Поиск</span>
+                <span className="whitespace-nowrap font-inter font-medium">
+                  Поиск
+                </span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3  h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -56,13 +58,13 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">
+                <span className="whitespace-nowrap font-inter font-medium">
                   Авиабилеты
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3  h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -78,13 +80,13 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">
+                <span className="whitespace-nowrap font-inter font-medium">
                   ЖД-билеты
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3  h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -107,11 +109,13 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">Отели</span>
+                <span className="whitespace-nowrap font-inter font-medium">
+                  Отели
+                </span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3  h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -127,11 +131,13 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">Туры</span>
+                <span className="whitespace-nowrap font-inter font-medium">
+                  Туры
+                </span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3  h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -147,13 +153,13 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">
+                <span className="whitespace-nowrap font-inter font-medium">
                   Аренда авто
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3  h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -169,13 +175,13 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">
+                <span className="whitespace-nowrap font-inter font-medium">
                   Аренда яхт
                 </span>
               </Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center space-x-2 px-8 h-20">
+              <Link href="#" className="flex items-center gap-3  h-20">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -191,14 +197,16 @@ const Hero = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-                <span className="font-inter text-base font-medium">Круизы</span>
+                <span className="whitespace-nowrap font-inter font-medium">
+                  Круизы
+                </span>
               </Link>
             </li>
           </ul>
 
-          <ul className="flex justify-between py-8">
+          <ul className="flex justify-between gap-4 py-8">
             <li className="w-full relative flex items-center border rounded-lg ps-6">
-              <span className="font-inter text-base font-semibold">Откуда</span>
+              <span className="font-inter font-semibold">Откуда</span>
               <Image
                 className="w-7 h-7 absolute cursor-pointer"
                 src={arrow}
@@ -206,24 +214,17 @@ const Hero = () => {
               />
             </li>
             <li className="w-full flex items-center border rounded-lg ps-6">
-              <span className="font-inter text-base font-semibold">Куда</span>
+              <span className="font-inter font-semibold">Куда</span>
             </li>
             <li>
-              <DatePicker
-                style={{ width: 162, height: "100%" }}
-                placeholder="Туда"
-              />
+              <DatePicker placeholder="Туда" />
             </li>
             <li>
-              <DatePicker
-                style={{ width: 162, height: "100%" }}
-                placeholder="Обратно"
-              />
+              <DatePicker placeholder="Обратно" />
             </li>
             <li>
               <Select
                 defaultValue="1 пасс, эконом"
-                style={{ width: 199, height: "100%" }}
                 options={[
                   { value: "jack", label: "Jack" },
                   { value: "lucy", label: "Lucy" },
@@ -232,7 +233,7 @@ const Hero = () => {
               />
             </li>
             <li className="w-full">
-              <button className="w-full h-full rounded-lg font-inter text-base font-bold">
+              <button className="w-full h-full rounded-lg font-inter font-bold">
                 Найти
               </button>
             </li>

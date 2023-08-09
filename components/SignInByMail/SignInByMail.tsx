@@ -23,6 +23,7 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
 
   const handleCancel = () => {
     setSignInByMailIsModalOpen(false);
+    
   };
   // ---------------------------------------------------------------------------------------------------------------------------------
   // POST
@@ -60,12 +61,12 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
             ]}
           >
             <label
-              className="block font-inter text-base font-medium mb-2"
+              className="flex flex-col gap-2  font-inter text-base font-medium"
               htmlFor="email"
             >
               Адрес электронной почты
+              <Input id="email" placeholder="hello@example.com" />
             </label>
-            <Input id="email" placeholder="hello@example.com" />
           </Form.Item>
           <Form.Item
             name="password"
@@ -81,22 +82,23 @@ const SignInByMail: FC<IMyModalVideoProps> = ({
             ]}
           >
             <label
-              className="flex justify-between font-inter text-base font-medium mb-2"
+              className="flex flex-col gap-2 font-inter text-base font-medium"
               htmlFor="password"
             >
-              Пароль
-              <span
-                className="cursor-pointer text-second text-sm font-medium"
-                onClick={() => {
-                  setSignInByMailIsModalOpen(false),
-                    setAccessRecoveryIsModalOpen(true);
-                }}
-              >
-                Забыли пароль?
-              </span>
+              <div className="flex justify-between">
+                Пароль
+                <span
+                  className="cursor-pointer text-second text-sm font-medium"
+                  onClick={() => {
+                    setSignInByMailIsModalOpen(false),
+                      setAccessRecoveryIsModalOpen(true);
+                  }}
+                >
+                  Забыли пароль?
+                </span>
+              </div>
+              <Input.Password id="password" placeholder="Password" />
             </label>
-
-            <Input.Password id="password" placeholder="Password" />
           </Form.Item>
           <Button className="myModal__in" htmlType="submit" block>
             Войти

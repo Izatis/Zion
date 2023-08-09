@@ -13,17 +13,20 @@ const config: Config = {
         second: "#4894FE",
         three: "#1F2024",
         fourth: "#4B5768",
-        // fifth
+        fifth: "#fff",
         // sixth
         seventh: "#494A50",
         // eighth
         // ninth
-        // tenth
+        tenth: "#71727A",
       },
       fontFamily: {
         roboto: ["Roboto, sans-serif"],
         inter: ["Inter, sans-serif"],
         plus: ["Plus Jakarta Sans, sans-serif"],
+      },
+      fontSize: {
+        "font-16": ["16px", "14px"],
       },
     },
   },

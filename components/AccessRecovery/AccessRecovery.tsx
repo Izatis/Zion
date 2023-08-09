@@ -37,10 +37,8 @@ const AccessRecovery: FC<IAccessRecoveryProps> = ({
   }, []);
 
   const handleSubmit = (value: any) => {
-    console.log("fasgdhfg");
-
+    setIsButtonClicked(true);
     setSuccessfullyIsModalOpen(true);
-    // setIsButtonClicked(true);
   };
   return (
     <>
@@ -67,12 +65,12 @@ const AccessRecovery: FC<IAccessRecoveryProps> = ({
             ]}
           >
             <label
-              className="block font-inter text-base font-medium mb-2"
+              className="flex flex-col gap-2 font-inter text-base font-medium"
               htmlFor="email"
             >
               Укажите адрес электронной почты
+              <Input id="email" placeholder="hello@example.com" />
             </label>
-            <Input id="email" placeholder="hello@example.com" />
           </Form.Item>
           <Button className="myModal__in" htmlType="submit" block>
             Сбросить пароль

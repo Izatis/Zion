@@ -2,6 +2,8 @@ import React, { FC, useEffect, useState } from "react";
 
 import Image from "next/image";
 import { Button, Form, Input, Modal } from "antd";
+import { useAppDispatch } from "@/hooks/redux";
+import { userRegistration } from "@/redux/reducers/auth.slice";
 import google from "@/assets/google.svg";
 import apply from "@/assets/apply.svg";
 import facebook from "@/assets/facebook.svg";
@@ -10,6 +12,12 @@ import yandex from "@/assets/yandex.svg";
 interface IСreateWidthGoogleProps {
   isСreateWidthGoogleModalOpen: boolean;
   setIsСreateWidthGoogleModalOpen: (active: boolean) => void;
+}
+
+interface IUserRegister {
+  email: string;
+  password: string;
+  first_name: string;
 }
 
 const СreateWidthGoogle: FC<IСreateWidthGoogleProps> = ({
@@ -23,13 +31,19 @@ const СreateWidthGoogle: FC<IСreateWidthGoogleProps> = ({
   };
   // ---------------------------------------------------------------------------------------------------------------------------------
   // POST
+  const dispatch = useAppDispatch();
   const [form] = Form.useForm();
   useEffect(() => {
     form.setFieldsValue({ ...form.getFieldsValue() });
   }, []);
 
-  const handleSubmit = (value: any) => {
+  const handleSubmit = (value: IUserRegister) => {
     setIsButtonClicked(true);
+    const newValue = {
+      ...value,
+      repeated_password: value.password,
+    };
+    dispatch(userRegistration(newValue));
   };
   return (
     <Modal
@@ -41,7 +55,7 @@ const СreateWidthGoogle: FC<IСreateWidthGoogleProps> = ({
     >
       <Form form={form} name="sign-up-form" onFinish={handleSubmit}>
         <Form.Item
-          name="name"
+          name="first_name"
           rules={[
             {
               required: true,
@@ -50,12 +64,12 @@ const СreateWidthGoogle: FC<IСreateWidthGoogleProps> = ({
           ]}
         >
           <label
-            className="block font-inter text-base font-medium mb-2"
-            htmlFor="name"
+            className="flex flex-col gap-2 font-inter text-base font-medium"
+            htmlFor="first_name"
           >
             Имя
+            <Input id="first_name" placeholder="Валентина" />
           </label>
-          <Input id="name" placeholder="Валентина" />
         </Form.Item>
         <Form.Item
           name="email"
@@ -72,12 +86,12 @@ const СreateWidthGoogle: FC<IСreateWidthGoogleProps> = ({
           ]}
         >
           <label
-            className="block font-inter text-base font-medium mb-2"
+            className="flex flex-col gap-2 font-inter text-base font-medium"
             htmlFor="email"
           >
             Адрес электронной почты
+            <Input id="email" placeholder="hello@example.com" />
           </label>
-          <Input id="email" placeholder="hello@example.com" />
         </Form.Item>
         <Form.Item
           name="password"
@@ -93,15 +107,15 @@ const СreateWidthGoogle: FC<IСreateWidthGoogleProps> = ({
           ]}
         >
           <label
-            className="block font-inter text-base font-medium mb-2"
+            className="flex flex-col gap-2 font-inter text-base font-medium"
             htmlFor="password"
           >
             Пароль
+            <Input.Password id="password" placeholder="Password" />
           </label>
-          <Input.Password id="password" placeholder="Password" />
         </Form.Item>
         <p className="text-fourth font-inter text-sm font-light mb-4">
-          Продолжая, Вы даете
+          Продолжая, Вы даете{" "}
           <span className="text-second">
             согласие на обработку <br /> персональных данных.
           </span>

@@ -3,23 +3,17 @@
 
 .hero {
   height: 611px;
-  background-color: #4894fe;
   @include adaptive-value("padding-top", 100, 100, 0);
-
-  h1 {
-    color: #fff;
-  }
 
   .tabs {
     bottom: -10%;
     background-color: #ffffff;
     box-shadow: 0px 4px 10px 6px rgba(0, 0, 0, 0.07);
-
     ul:nth-child(1) {
       border-bottom: 1px solid #e8e9f1;
       li {
         a {
-          &:hover {
+          &:focus {
             border-bottom: 2px solid #4894fe;
             svg {
               path {
@@ -33,6 +27,7 @@
 
           span {
             color: #c5c6cc;
+            @include adaptive-value("font-size", 16, 8, 1);
           }
         }
       }
@@ -40,14 +35,20 @@
 
     ul:nth-child(2) {
       li {
-        height: 68px;
+        @include adaptive-value("height", 68, 50, 1);
+
+        span {
+          @include adaptive-value("font-size", 16, 8, 1);
+        }
       }
 
       li:nth-child(1) {
         max-width: 291px;
 
         img {
-          right: -20px;
+          @include adaptive-value("width", 40, 20, 1);
+          @include adaptive-value("height", 40, 20, 1);
+          right: -30px;
         }
       }
 
@@ -61,6 +62,7 @@
         button {
           background-color: #4894fe;
           color: #fff;
+          @include adaptive-value("font-size", 16, 8, 1);
         }
       }
     }
