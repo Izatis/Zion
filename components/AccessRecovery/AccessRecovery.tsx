@@ -2,6 +2,8 @@ import React, { FC, useEffect, useState } from "react";
 
 import { Button, Form, Input, Modal } from "antd";
 import Successfully from "../Successfully/Successfully";
+import { useAppDispatch } from "@/hooks/redux";
+import { userEmail } from "@/redux/reducers/email.slice";
 
 interface IAccessRecoveryProps {
   isAccessRecoveryModalOpen: boolean;
@@ -31,6 +33,7 @@ const AccessRecovery: FC<IAccessRecoveryProps> = ({
 
   // ---------------------------------------------------------------------------------------------------------------------------------
   // POST
+  const dispatch = useAppDispatch();
   const [form] = Form.useForm();
   useEffect(() => {
     form.setFieldsValue({ ...form.getFieldsValue() });
@@ -39,6 +42,7 @@ const AccessRecovery: FC<IAccessRecoveryProps> = ({
   const handleSubmit = (value: any) => {
     setIsButtonClicked(true);
     setSuccessfullyIsModalOpen(true);
+    dispatch(userEmail(value));
   };
   return (
     <>

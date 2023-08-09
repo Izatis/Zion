@@ -10,7 +10,7 @@ export const userRegistration = createAsyncThunk<void, IUserRegistration>(
 
     try {
       const { data } = await axios.post(
-        process.env.NEXT_PUBLIC_BASE_URL + "/api/signup",
+        process.env.NEXT_PUBLIC_BASE_URL + "/api/api/signup",
         {
           email,
           password,
